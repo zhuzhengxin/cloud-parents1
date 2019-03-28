@@ -1,0 +1,7 @@
+server:
+  port: 19952
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native

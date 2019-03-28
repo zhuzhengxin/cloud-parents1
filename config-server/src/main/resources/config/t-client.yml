@@ -1,0 +1,15 @@
+server:
+  port: 19960
+spring:
+  application:
+    name: t-client
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:19951/eureka/
+    registry-fetch-interval-seconds: 5
